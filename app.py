@@ -22,7 +22,7 @@ st.sidebar.image('https://cdn.dribbble.com/userupload/20000742/file/original-aaf
 
 all_value=[]
 for i in final_X:
-  min_value = fina_X[i].min()
+  min_value = final_X[i].min()
   max_value = final_X[i].max()
   result=st.sidebar.slider(f'Select{i} value',min_value,max_value)
   all_value.append(result)
@@ -45,5 +45,6 @@ with st.spinner('predicting house price'):
 
 st.succes(f'Estimates House price is : $ {final_price}')
 st.markdown('''**Design and Developed by Nikhil Singh**''')
+
 
 
