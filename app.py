@@ -29,7 +29,7 @@ for i in final_X:
 
 user_Xscaler.transform([all_value])
 
-@st.cash_data
+@st.cache_data
 def ml_model(X,y):
   model = RandomForestRegressor()
   model.fit(X,y)
@@ -45,6 +45,7 @@ with st.spinner('predicting house price'):
 
 st.succes(f'Estimates House price is : $ {final_price}')
 st.markdown('''**Design and Developed by Nikhil Singh**''')
+
 
 
 
